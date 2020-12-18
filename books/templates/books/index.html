@@ -1,0 +1,14 @@
+{% if books %}
+  <table>
+    <thead>
+      <th>Title</th>
+      <th>Body</th>
+    </thead>
+    <tbody>
+      {% for book in books %}
+        <td>{{ book.title }}</td>
+        <td>{{ book.body }}</td>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endif %}
